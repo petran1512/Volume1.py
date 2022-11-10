@@ -1,5 +1,20 @@
-# 2) With the same string as in (1), you must print each character of the string in reverse (in the same line).
-# For example: DLROW OLLEH
-
-h="HELLO WORLD" [: : -1]
-print (h)
+s=0
+n=0
+print("Calculator...")
+print("To end the process type in symbol n.\n")
+while s!="n":
+    f=float(input("Give first number:"))
+    s=input("Give symbol:")
+    l=float(input("Give second number:"))
+    if s=="+":
+        n=f+l
+    elif s=="-":
+        n=f-l
+    elif s=="*":
+        n=f*l
+    elif s=="/":
+        n=f/l
+    else:
+        print(n)
+    print(n)
+print("Process end!")
