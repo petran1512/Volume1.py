@@ -1,9 +1,11 @@
-# 4) Iterate over each character of the string given in (1) and only print vowels.
-# For example: EOO
-
-h =input("wright:")
-v=("a","e","o","i","u","A","E","O","I","U")
-for i in h:
-    if i in v:
-        print(i)
-
+ph=str(input("Give phrase:"))
+let=str(input("Give letter:"))
+i=0;f=0
+if len(ph)==0:
+    print("Nothing.")
+else:
+    while i<=len(ph)-1 :
+        if ph[i]==let:
+            f=f+1
+        i=i+1    
+    print('The letter',let,'exists',f,'times in this phrase.')
